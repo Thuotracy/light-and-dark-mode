@@ -27,3 +27,11 @@ section .card{
     justify-content: center;
     align-items: center;
 }
+
+section .card .content,
+section .card .imgText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
