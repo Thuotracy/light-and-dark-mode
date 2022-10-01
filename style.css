@@ -14,6 +14,11 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background 0.5s;
+}
+
+section.dark{
+    background: #24292d;
 }
 
 section .card{
@@ -26,6 +31,11 @@ section .card{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background 0.5s;
+}
+
+section.dark .card{
+    background: #323840;
 }
 
 section .card .content,
@@ -67,6 +77,10 @@ section .card .imgText h3 span{
     font-size: 0.65em;
 }
 
+section.dark .card .imgText h3 span{
+    color: #ccc;
+}
+
 section .card .sci{
     display: flex;
     margin-top: 15px;
@@ -92,6 +106,10 @@ section .card .sci li a{
     transition: 0.5s;
 }
 
+section.dark .card .sci li a{
+    background: #404852;
+}
+
 section .card .sci li a:hover{
     color: white;
 }
@@ -114,4 +132,33 @@ section .card .sci li a:before{
 
 section .card .sci li a:hover:before{
     transform: scale(1)
+}
+
+.toggle{
+   position: absolute;
+   top: 20px;
+   right: 20px;
+   background: #e9f5ff;
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center; 
+   align-items: center;
+   cursor: pointer;
+}
+
+section.dark .toggle{
+    background: #404852;
+}
+
+.toggle:before{
+    content: '\f186';
+    font-family: fontAwesome;
+    color: rgb(150, 35, 55);
+}
+
+section.dark .toggle:before{
+    content: '\f185';
+    color: white;
 }
